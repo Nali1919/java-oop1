@@ -26,12 +26,12 @@ public class Prodotto {
 		
 	}
 	
-     int prezzoSenzaIva() {
+     double prezzoSenzaIva() {
 		
 	  return prezzo;
 	}
 	
-	int prezzoConIva () {
+	double prezzoConIva () {
 		
 		return prezzo + iva;
 	}
