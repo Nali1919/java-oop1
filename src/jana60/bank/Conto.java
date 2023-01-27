@@ -3,16 +3,26 @@ package jana60.bank;
 public class Conto {
 	
 	int numeroConto;
-	String nomeProprietario;
-	int saldo;
-	
-	
-	public Conto(int numeroConto, String nomeProprietario, int saldo) {
-		super();
+	String nome;
+	double saldo;
+
+	public Conto(String nome, int numeroConto) {
 		this.numeroConto = numeroConto;
-		this.nomeProprietario = nomeProprietario;
-		this.saldo = saldo;
+		this.saldo = 0;
+		this.nome = nome;
 	}
-	
+
+	void deposita(double money) {
+		this.saldo += money;
+	}
+
+	boolean preleva(double money) {
+		if (money > this.saldo) {
+			return false;
+		} else {
+			this.saldo -= money;
+			return true;
+		}
+	}
 
 }
