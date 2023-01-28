@@ -40,7 +40,7 @@ public class Prodotto {
 		
 		int intValue = 125;
 		 
-        String s = String.format("%011d", intValue);
+        String s = String.format("%08d", intValue);
         
         return s;
 	}
