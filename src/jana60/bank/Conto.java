@@ -6,7 +6,7 @@ public class Conto {
 	String nome;
 	double saldo;
 
-	public Conto(String nome, int numeroConto) {
+	public Conto(String nome, int numeroConto, double saldo) {
 		this.numeroConto = numeroConto;
 		this.saldo = 0;
 		this.nome = nome;

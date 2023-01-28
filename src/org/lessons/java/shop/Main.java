@@ -19,6 +19,8 @@ public class Main {
 		System.out.println("Il prezzo è:  " + i.prezzoSenzaIva());
 		System.out.println("Prezzo con iva: " +i.prezzoConIva());
 		
+		System.out.println("eccolo" + i.padLeft());
+		
 	}
 	
 	

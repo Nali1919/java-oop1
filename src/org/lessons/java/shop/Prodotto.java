@@ -36,6 +36,15 @@ public class Prodotto {
 		return prezzo + iva;
 	}
 	
+	String padLeft () {
+		
+		int intValue = 125;
+		 
+        String s = String.format("%011d", intValue);
+        
+        return s;
+	}
+	
 	
 
 }

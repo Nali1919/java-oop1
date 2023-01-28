@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		String nome;
 		int numeroConto = 0;
 		String sceltaUtente = "";
@@ -19,7 +19,7 @@ public class Main {
 		Random r = new Random();
 		numeroConto = r.nextInt(1000);
 
-		Conto c = new Conto(nome, numeroConto);
+		Conto c = new Conto(nome, numeroConto, 0);
 
 		System.out.println("Nome Acount: " + nome);
 		System.out.println("Numero Acount: " + numeroConto);
@@ -54,7 +54,7 @@ public class Main {
 		}
 
 		s.close();
-		
+
 	}
 
 }
